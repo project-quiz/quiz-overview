@@ -1,2 +1,2 @@
 # quiz-overview
-The quiz realtime leaderboard
+The quiz realtime leaderboard build inside Electron.
