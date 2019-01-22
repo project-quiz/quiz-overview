@@ -1,104 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stylesheet/theme.css" crossorigin="anonymous">
+    <title>Title of the document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/theme.css">
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 id="leaderboard">Leaderboard</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div id="right-list" class="col-md-6">
-          <div class="row">
-            <div class="col-md-3">1.</div>
-            <div class="col-md-9">
-              <div class="row"><h3>Guido</h3></div>
-              <div class="row"><p>50 points</p></div>  
-            </div>
-          </div>
-          <div class="row">
-              <div class="col-md-3">2.</div>
-              <div class="col-md-9">
-                <div class="row"><h3>Piet</h3></div>
-                <div class="row"><p>25 points</p></div>  
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">3.</div>
-                <div class="col-md-9">
-                  <div class="row"><h3>Jan</h3></div>
-                  <div class="row"><p>15 points</p></div>  
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-3">4.</div>
-                  <div class="col-md-9">
-                    <div class="row"><h3>Henk</h3></div>
-                    <div class="row"><p>5 points</p></div>  
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">5.</div>
-                    <div class="col-md-9">
-                      <div class="row"><h3>Klaas</h3></div>
-                      <div class="row"><p>0 points</p></div>  
-                    </div>
-                  </div>
-          </div>
-          <div id="left-list" class="col-md-6">
-              <div class="row">
-                <div class="col-md-3">6.</div>
-                <div class="col-md-9">
-                  <div class="row"><h3>Guido</h3></div>
-                  <div class="row"><p>50 points</p></div>  
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-3">7.</div>
-                  <div class="col-md-9">
-                    <div class="row"><h3>Piet</h3></div>
-                    <div class="row"><p>25 points</p></div>  
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">8.</div>
-                    <div class="col-md-9">
-                      <div class="row"><h3>Jan</h3></div>
-                      <div class="row"><p>15 points</p></div>  
-                    </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-md-3">9.</div>
-                      <div class="col-md-9">
-                        <div class="row"><h3>Henk</h3></div>
-                        <div class="row"><p>5 points</p></div>  
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">10.</div>
-                        <div class="col-md-9">
-                          <div class="row"><h3>Klaas</h3></div>
-                          <div class="row"><p>0 points</p></div>  
-                        </div>
-                      </div>
-              </div>
-      </div>
-    </div>
-    <div class="row">
-      We are using node <script>document.write(process.versions.node)</script>,
-      Chrome <script>document.write(process.versions.chrome)</script>,
-      and Electron <script>document.write(process.versions.electron)</script>.
-    </div>
+    <canvas id="canvas-leaderboard"></canvas>
+    <button style="top: 0px; left: 0px; position: absolute;" id="button-update">Update Players</button>
   </body>
-  <script type="text/javascript">
-    window.$ = window.jQuery = require('jquery');
-    window.Bootstrap = require('bootstrap');
-    require('./renderer/index')
-    </script>
+  <script type="text/javascript">require('./dist/renderer/index.js')</script>
 </html>
