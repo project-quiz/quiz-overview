@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/project-quiz/quiz-overview#readme",
   "devDependencies": {
-    "electron": "^22.2.0",
+    "electron": "^22.3.21",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3"
   },
